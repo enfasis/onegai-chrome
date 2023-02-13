@@ -1,0 +1,20 @@
+{
+  "name": "Onegai",
+  "description": "Video Scrapper",
+  "version": "2.0",
+  "manifest_version": 3,
+  "permissions": ["scripting", "tabs"],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "hello.html"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "Command+Shift+F"
+      }
+    }
+  }
+}

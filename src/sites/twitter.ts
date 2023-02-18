@@ -36,12 +36,11 @@ export default async function parseTwitter(): Promise<Video[]> {
         video_info: { variants },
       } = media[0];
 
-      const max = (variants as TwitterVariant[]).reduce(function (
-        prev,
-        current
-      ) {
-        return prev.bitrate > current.bitrate ? prev : current;
-      });
+      const max = (variants as TwitterVariant[])
+        .filter((v) => v.content_type === "video/mp4")
+        .reduce((prev, current) =>
+          prev.bitrate > current.bitrate ? prev : current
+        );
 
       return [
         {

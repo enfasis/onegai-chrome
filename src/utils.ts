@@ -30,3 +30,13 @@ export function createVideoElement({
 
   return element;
 }
+
+export async function getHtmlSource(reload: boolean = false): Promise<string> {
+  if (reload)
+    return fetch(document.URL, { credentials: "include" }).then((r) =>
+      r.text()
+    );
+  return new Promise((r) =>
+    r(document.getElementsByTagName("html")[0].innerHTML)
+  );
+}

@@ -18,8 +18,10 @@ You can download it [here](https://chrome.google.com/webstore/detail/onegai/acbm
 
 ## Development
 
-Run the follow command in your terminal to generate the extension and its zipped version.
+This project only aims to retrieve shareable-url's, so every site must have a different file to parse urls.
 
+1. Build the extension
 ```sh
 pnpm build
 ```
+2. Load the unpacked `/dist` in the `chrome://extensions` tab

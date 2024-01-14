@@ -22,10 +22,6 @@ To achieve the functionalities described above, Onegai requires the following pe
 
 Onegai does not collect or store any information obtained during your use of the extension. The video shareable URLs are processed locally and utilized only for the purpose of providing you with the intended functionality of the extension.
 
-## Data Security
-
-We take the security of your information seriously. Onegai employs industry-standard security measures to protect against unauthorized access, disclosure, alteration, or destruction of the information we do not collect or store.
-
 ## Third-Party Services
 
 Onegai does not utilize any third-party services to process or store the information that is not collected. All data processing occurs locally within the extension.
